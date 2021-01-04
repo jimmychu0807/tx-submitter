@@ -1,0 +1,15 @@
+{
+  "name": "tx-submitter",
+  "version": "0.1.0",
+  "description": "Substrate Transaction Submitter",
+  "main": "index.js",
+  "author": "Jimmy Chu",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+  	"halva": "halva-cli"
+  },
+  "dependencies": {
+    "halva-cli": "^0.3.3"
+  }
+}
