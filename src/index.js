@@ -10,10 +10,10 @@ const LASTING_SECS = 30;
 const ALICE = '//Alice';
 const BOB = '//Bob';
 // This is sending txs / sec, the least is 1 tx/s
-const TX_FREQUENCY = 200;
+const TX_FREQUENCY = 20;
 
-// This is 100 Unit
-const TX_AMT = 100000000000000;
+// This is 1 Unit
+const TX_AMT = 1000000000000000;
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
