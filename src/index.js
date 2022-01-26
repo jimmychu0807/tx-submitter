@@ -2,10 +2,9 @@ const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
 
 // Substrate connection config
 const WEB_SOCKET = 'ws://localhost:9944';
-const TYPES = {};
 
 // This script will wait for n secs before stopping itself
-const LASTING_SECS = 30;
+const LASTING_SECS = 20;
 
 const ALICE = '//Alice';
 const BOB = '//Bob';
@@ -19,7 +18,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const connectSubstrate = async () => {
   const wsProvider = new WsProvider(WEB_SOCKET);
-  const api = await ApiPromise.create({ provider: wsProvider, types: TYPES });
+  const api = await ApiPromise.create({ provider: wsProvider });
   return api;
 };
 

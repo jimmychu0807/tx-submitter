@@ -1,25 +1,23 @@
 {
   "name": "tx-submitter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Substrate Transaction Submitter",
   "main": "src/index.js",
   "author": "Jimmy Chu",
   "license": "MIT",
-  "private": false,
   "scripts": {
-  	"halva": "halva-cli",
-  	"start": "node --use_strict src/index.js",
-  	"start:dev": "nodemon --use_strict --inspect src/index.js",
-  	"start:debug": "nodemon --use_strict --inspect --inspect-brk src/index.js"
+    "start": "node --use_strict src/index.js",
+    "start:dev": "nodemon --use_strict --inspect src/index.js",
+    "start:debug": "nodemon --use_strict --inspect --inspect-brk src/index.js"
   },
   "dependencies": {
-    "@polkadot/api": "^3.2.3",
-    "@polkadot/keyring": "^5.2.3",
-    "@polkadot/util": "^5.2.3",
-    "@polkadot/util-crypto": "^5.2.3"
+    "@polkadot/api": "^7.4.1",
+    "@polkadot/keyring": "^8.3.3",
+    "@polkadot/util": "^8.3.3",
+    "@polkadot/util-crypto": "^8.3.3"
   },
   "devDependencies": {
-    "@halva-suite/halva-cli": "^0.3.3",
-    "nodemon": "^2.0.6"
-  }
+    "nodemon": "^2.0.15"
+  },
+  "packageManager": "yarn@3.1.1"
 }
